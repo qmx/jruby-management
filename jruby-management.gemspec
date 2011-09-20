@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Douglas Campos"]
   s.email       = ["qmx@qmx.me"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{JRuby Management MBeans}
+  s.description = %q{JRuby JMX Management Tools}
 
   s.rubyforge_project = "jruby-management"
 
