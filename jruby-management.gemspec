@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{JRuby Management MBeans}
   s.description = %q{JRuby JMX Management Tools}
 
+  s.platform    = "java"
   s.rubyforge_project = "jruby-management"
 
   s.files         = `git ls-files`.split("\n")
