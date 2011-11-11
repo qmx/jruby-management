@@ -20,6 +20,16 @@ module JRuby
         end
         file.close
       end
+
+      operation "enables profiler"
+      returns :void
+      def enable_profiling
+        class << JRuby.runtime
+          field_reader :config
+        end
+        JRuby.runtime.config.profiling_mode = org.jruby.RubyInstanceConfig::ProfilingMode::GRAPH
+        JRuby.reference(JRuby.runtime.kernel).invalidate_cache_descendants
+      end
     end
     import java.lang.management.ManagementFactory
     import javax.management.ObjectName
