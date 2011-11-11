@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "jruby-management/version"
+require "jruby/management/version"
 
 Gem::Specification.new do |s|
   s.name        = "jruby-management"
-  s.version     = Jruby::Management::VERSION
+  s.version     = JRuby::Management::VERSION
   s.authors     = ["Douglas Campos"]
   s.email       = ["qmx@qmx.me"]
   s.homepage    = ""
