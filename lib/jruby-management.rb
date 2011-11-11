@@ -13,8 +13,8 @@ module JRuby
       parameter :string, "path", "path to write profiling results"
       returns :void
       def dump_profile_info(path)
-        file = open(path, 'w+')
         runtime = JRuby.runtime
+        file = open(path, 'w+')
         runtime.thread_service.ruby_thread_map.each do |t, rubythread|
           file.puts("\n#{t} profile results:")
           context = JRuby.reference(rubythread).context
