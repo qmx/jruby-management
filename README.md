@@ -5,4 +5,6 @@ Small toolchain of JMX beans to manage JRuby runtimes
 
 Current MBeans:
 
-* ProfilerMBean: supports dumping profile data to specific files
+## ProfilerMBean
+* supports enabling profiling mode at runtime
+* supports dumping profile data to specified path
