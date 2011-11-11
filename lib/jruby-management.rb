@@ -36,7 +36,7 @@ module JRuby
     import javax.management.ObjectName
 
     def register_mbean(clazz)
-      object_name = ObjectName.new("org.jruby.profiler:name=JRubyProfilerMBean")
+      object_name = ObjectName.new("org.jruby.management:name=JRubyProfilerMBean")
       ManagementFactory.platform_mbean_server.register_mbean(clazz.new, object_name)
     end
 
